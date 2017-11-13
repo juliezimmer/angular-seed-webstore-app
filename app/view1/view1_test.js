@@ -7,7 +7,7 @@ describe('myWebStoreApp.view1 module', function(){
 
   describe('view1 controller', function(){
 
-    it('dhould ....', inject(function($controller){
+    it('should ....', inject(function($controller){
 
       var view1Controller = $controller('View1Controller');
       expect(view1Controller).toBeDefined();

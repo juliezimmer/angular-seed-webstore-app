@@ -2,7 +2,7 @@
 
 //Declare app level modules here; depends on views and components
 
-angular.module('myWebStoreApp', ['ngRoute', 'myWebStoreApp.view1','myWebStoreApp.view2', 'myWebStoreApp.template'])
+angular.module('myWebStoreApp', ['ngRoute', 'myWebStoreApp.view1','myWebStoreApp.view2', 'myWebStoreApp.version'])
 
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider){
   $locationProvider.hashPrefix('!');
@@ -12,3 +12,5 @@ angular.module('myWebStoreApp', ['ngRoute', 'myWebStoreApp.view1','myWebStoreApp
         redirectTo: '/view1'
     });
 }]);
+
+//The name of this app is myWebStoreApp 

@@ -1,9 +1,9 @@
 {
-  "name": "Julie Zimmer",
+  "name": "simple-webstore-app-seed",
   "authors": [
     "Julie Zimmer"
   ],
-  "description": "angular-seed starter for an angular js app",
+  "description": "simple ajs seed",
   "main": "",
   "license": "MIT",
   "dependencies": {
