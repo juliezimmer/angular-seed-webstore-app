@@ -2,15 +2,17 @@
 
 //Declare app level modules here; depends on views and components
 
-angular.module('myWebStoreApp', ['ngRoute', 'myWebStoreApp.view1','myWebStoreApp.view2', 'myWebStoreApp.version'])
+angular.module('templateStore', ['ngRoute', 'templateStore.view1','templateStore.view2', 'templateStore.templates'])
 
-.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider){
-  $locationProvider.hashPrefix('!');
+.config(['$routeProvider', function( $routeProvider){
+  //$locationProvider.hashPrefix('!');
 
-  $routeProvider
-    .otherwise({
-        redirectTo: '/view1'
+  $routeProvider.otherwise({
+        redirectTo: '/templates'
     });
 }]);
 
-//The name of this app is myWebStoreApp 
+//The name of this app is being changed to "templateStore". 
+/* myWebStoreApp.version (located in the dependencies for this app) was replaced with templateStore.templates.
+myWebStore.version was only used to demo the angular-seed starter. */
+//the .otherwise.redirectTo: was changed from '/view1' to '/templates'.

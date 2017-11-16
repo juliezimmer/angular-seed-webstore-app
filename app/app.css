@@ -23,3 +23,30 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+/* this resizes the image to fit in its div on the template-details.html page. */
+.img-full {
+    width: 100%;
+}
+
+/* aligns the image on the page with more precision */
+.templates {
+  text-align: center;
+}
+
+/* prevents the image from taking up the entire page */
+.templates img{
+    width: 70%;
+}
+
+/* this brings the Details button into bettter alignment with the size of the image on the main templates page. */
+.templates a {
+   width: 50%; /* decreases the button size so it matches the image size */
+   text-align: center; /* centers the text on the button */
+   margin: auto; /* puts the button in the middle of the image div */
+}
+
+/* adds a line between templates to add some space between each one */
+.templates .col-md-4 {
+   margin-bottom: 20px;
+}

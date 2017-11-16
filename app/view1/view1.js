@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myWebStoreApp.view1', ['ngRoute'])
+angular.module('templateStore.view1', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider){
   $routeProvider

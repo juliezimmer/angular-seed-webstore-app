@@ -1,0 +1,18 @@
+
+<div class="row templates"> 
+  <div ng-repeat="template in templates">
+    <div class="col-md-4">
+      <h3>{{template.name}}</h3>
+      <img ng-src="img/{{template.images[0].name}}">
+      <h4>{{template.price | currency}}</h4>
+      <a href="#!/templates/template-details" class="btn btn-primary btn-block">Details</a>
+    </div>
+  </div>
+</div>
+
+<!--ng-repeat will loop through the json file of images and       display each one on the DOM dynamically.
+  "template" refers to each item in the json file.
+  "in templates" refers to the entire json file. 
+  So, this says: go through each image in the templates.json file and put it on the DOM. -->
+
+<!-- when looping through images with ng-repeat, ng-src must replace src in an img tag. -->
